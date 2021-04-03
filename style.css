@@ -24,7 +24,7 @@ h3 {
   text-transform: none;
 }
 html {
-  background-color: #000000;
+background: linear-gradient(178deg, #000000 68%, #01011a 100%);
 }
 
 }
@@ -54,6 +54,6 @@ h3 {
   text-transform: none;
 }
 html {
-  background-color: #b3c7c7;
+background: linear-gradient(178deg, #b3c7c7 68%, #ffffff 100%);
 }
 }
