@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Default';
+    font-family:'VCR OSD Mono';
     src: url('VCROSDMono.eot');
     src: url('VCROSDMono.eot?#iefix') format('embedded-opentype'),
         url('VCROSDMono.woff2') format('woff2'),
@@ -16,5 +16,5 @@
 html {
   background-color: #0049ff;
   color: #ffffff;
-  font-family: Default;
+  font-family: 'VCR OSD Mono';
 }
