@@ -11,9 +11,11 @@
     font-display: swap;
 }
 
-
-body {
+html {
   background-color: #0049ff;
+}
+
+h3 {
   color: #ffffff;
   font-family: 'Arial', 'Helvetica', 'sans-serif';
 }
