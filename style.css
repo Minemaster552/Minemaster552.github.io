@@ -23,3 +23,12 @@ h1 {
   color: #ffffff;
   font-family: 'VCR OSD Mono';
 }
+.imgbox {
+ display: grid;
+ height: 100%;
+ }
+.center-fit {
+ max-width: 100%;
+ max-height: 100vh;
+ margin: auto;
+ }
