@@ -11,10 +11,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
- <div class="imgbox">
+ <div class="imgbox" id="imgbox">
  <img src="Grafika1.png" class="center-fit" alt="Vítejte" />
  </div>
 
 <h3>Youtube "tvůrce obsahu", "nadšenec" html a css, samo-prohlášený digitální "umělec" a "filmař"/"herec" a také "spisovatel" prostě multitasking. 😉</h3>
 </body>
+
+<script type="text/javascript" charset="utf-8">
+if(screen.availHeight > screen.availWidth){
+    document.getElementById("imgbox").innerHTML = "<h1>MINEMASTER552</h1>";
+};
+else if(screen.availHeight < screen.availWidth){
+  document.getElementById("imgbox").innerHTML = "<img src="Grafika1.png" class="center-fit" alt="Vítejte" />";
+}
+</script>
 </html>
