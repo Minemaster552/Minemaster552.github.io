@@ -1,61 +1,52 @@
 @font-face {
-    font-family:'VCR OSD Mono';
-    src: url('VCROSDMono.eot');
-    src: url('VCROSDMono.eot?#iefix') format('embedded-opentype'),
-        url('VCROSDMono.woff2') format('woff2'),
-        url('VCROSDMono.woff') format('woff'),
-        url('VCROSDMono.ttf') format('truetype'),
-        url('VCROSDMono.svg#VCROSDMono') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: VCROSDMono;
+  src: url(VCROSDMono.ttf);
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 html {
-  background-color: #0049ff;
-  font-family: 'Times New Roman', Times, serif;
-}
-#menubar {
-  display: inline;
-}
-
-#menubar > marquee > h3 {
+  background-color: blue;
   color: white;
-  font-family: 'Comic Sans MS';
-  letter-spacing: 1px;
+  word
 }
-
- #menubar > h4 {
-  float: left;
-  background-image: linear-gradient(to left, indigo, blue, green, yellow, orange, red);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: left;
+#menu {
   font-size: 48px;
-  font-family: 'VCR OSD Mono';
-  margin: 15px;
+  font-family: VCROSDMono;
 }
-
-a {
+#menu>element {
+  float: left;
+}
+#content {
+  padding-top: 10%;
+  width: 50%;
+  height: auto;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+#content>h2 {
+  font-weight: 700;
+}
+#logo {
+    float: left;
+    background-image: linear-gradient(to left, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#ui {
+  float: right;
+  font-family: Montserrat;
+  font-weight: 700;
+}
+#ui>a {
   color: white;
-  font-size: 20px;
+  text-decoration: none;
 }
-a:visited {
+#ui>a:visited {
   color: white;
+  text-decoration: none;
 }
-a:hover {
-  color: gainsboro;
-  font-size: 25px;
-}
-#mail {
-  width: fit-content;
-}
-#mail > button {
-  vertical-align: middle;
-  font-family: 'Times New Roman', Times, serif;
-}
-p {
-  font-family: 'Comic Sans MS';
+#ui>a:hover {
   color: white;
+  text-decoration: underline;
 }
