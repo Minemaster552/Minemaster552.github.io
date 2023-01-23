@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+    <title>Lihejština (umělý jazyk)</title>
+</head>
+<body onload="check_mode()">
+    <div>
+        <h1 class="w3-padding-small">Lihejština</h1>
+        <a class="w3-display-topmiddle" href="javascript:toggle_mode()">Světlý/Tmavý Režim</a>
+        <hr>
+        <div class="w3-panel w3-margin w3-yellow">
+            <h4>Pahýl</h4>
+            <p>Tento článek je <a href="https://cs.wikipedia.org/wiki/Wikipedie:Pahýl">pahýl</a> znamenaje že nemusí obsahovat celé údaje.</p>
+        </div>
+        <div class="w3-padding-large">Lihejština je <a class="w3-text-blue" href="https://cs.wikipedia.org/wiki/Umělý_jazyk">umělý jazyk</a> (conlang) vytvořen Michalem Viatrem, který se pohybuje na internetu pod přezdívkou <a href="https://mm552.tk/" class="w3-text-blue">minemaster552</a>.<br>
+                                      Neoficiální zkratka dle <a class="w3-text-blue" href="https://cs.wikipedia.org/wiki/ISO_639-2">ISO 639-2</a> by byla <b>LE</b>.
+        </div>
+    </div>
+    <script>
+        function check_mode () {
+            var mode_canvas = document.getElementById("main");
+            if (localStorage.dark_mode == 'true') {
+                mode_canvas.classList.add("w3-black");
+            }
+            else {};
+        }
+
+        function toggle_mode () {
+            var mode_canvas = document.getElementById("main");
+            mode_canvas.classList.toggle("w3-black");
+            if (mode_canvas.classList.contains("w3-black")) {
+                localStorage.setItem('dark_mode','true');
+            }
+            else {
+                localStorage.setItem('dark_mode','false');
+            }
+        }
+    </script>
+</body>
+</html>

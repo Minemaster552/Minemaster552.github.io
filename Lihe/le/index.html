@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" id="main">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css'>
+    <title>LIHE (DEHE)</title>
+</head>
+<body onload="check_mode()">
+    <div>
+        <h1 class="w3-padding-small">LIHE</h1>
+        <a class="w3-display-topmiddle" href="javascript:toggle_mode()">SO/MO</a>
+        <hr class="w3-card">
+        <div class="w3-panel w3-margin w3-yellow">
+            <h4>MOREMOPO LI DESEHE LICE</h4>
+            <p>LICE <a href="LI_DESEHE.html">LI DESEHE</a>, MO ME MI HOSO.</p>
+        </div>
+        <div class="w3-padding-large">LIHE ME <a class="w3-text-blue" href="https://cs.wikipedia.org/wiki/Umělý_jazyk">DEHE</a> (conlang), MICHAL VIATR DE HO, HO MOHI HO <a href="https://mm552.tk/" class="w3-text-blue">minemaster552</a>.<br>
+                                      PO LIHE V <a class="w3-text-blue" href="ISO_639-2.html">ISO 639-2</a> ME <b>LE</b>.
+        </div>
+    </div>
+    <script>
+        function check_mode () {
+            var mode_canvas = document.getElementById("main");
+            if (localStorage.dark_mode == 'true') {
+                mode_canvas.classList.add("w3-black");
+            }
+            else {};
+        }
+
+        function toggle_mode () {
+            var mode_canvas = document.getElementById("main")
+            mode_canvas.classList.toggle("w3-black")
+        }
+    </script>
+</body>
+</html>
